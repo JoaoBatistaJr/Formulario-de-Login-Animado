@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Formulario de Login Animado</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="estilo.css">
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        
+    </head>
+    <body>
+        <form action="index.html" class="login-form">
+            <h1>Login</h1>
+            <div class="txtb">
+                <input type="text">
+                <span data-placeholder="Usuário"></span>
+            </div>
+
+            <div class="txtb">
+                <input type="password">
+                <span data-placeholder="Senha"></span>
+            </div>
+
+            <input type="submit" class="logbtn" value="login">
+
+            <div class="buttom-text">
+                Ainda não tem conta? <a href="#">Inscreva-se</a>
+            </div>
+        </form>
+
+        <script type="text/javascript">
+            $(".txtb input").on("focus",function() {
+                $(this).addClass("focus");              
+            });
+            $(".txtb input").on("blur",function() {
+                if($(thisi).val() == "")
+                $(this).removeClass("focus");              
+            });
+        </script>
+
+    </body>
+</html>
